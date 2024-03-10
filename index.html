@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontAwesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- offer bar -->
+    <div class="offer-bar">
+        <p class="offer-bar_txt">Sign Up and <span>GET 20% OFF</span> for your first Order</p>
+        <i id="offer-close" onclick="close_offer()" style="margin-left: 10%; cursor: pointer; color: white;" class="fa-solid fa-xmark"></i>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <div class="navbar-links">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#new-arrivals">New Arrival</a></p>
+            <p><a href="#mostWanted">Most Wanted</a></p>
+            <p><a href="collection.html">Collections</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>        </div>
+    </nav>
+
+    <!-- Side navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="classNavbar()">
+            <i class="fa-solid fa-xmark" style="cursor: pointer;"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html" >Home</a></p>
+            <p class="side-navbar-link"><a href="#new-arrivals" >New Arrival</a></p>
+            <p class="side-navbar-link"><a href="#mostWanted" >Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="collection.html" >Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html" >Contact Us</a></p>
+        </div>
+
+    </div>
+
+    <!-- Header -->
+
+    <div class="header">
+        <div class="header_txt">
+            <h1>Level up your style with our</h1>
+            <p>Summer Collections</p>
+            <button class="header-btn">Shop Now</button>
+        </div>
+
+        <div class="header-img">
+            <img src="./images/slider-one.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- Brands -->
+
+    <div class="brands">
+        <h2>Brands</h2>
+        <div class="brands-container">
+            <div>
+                <img src="./images/b1.png" alt="" style="width: 20%;">
+                <h2>Behance</h2>
+            </div>
+            <div>
+                <img src="./images/b2.png" alt="" style="width: 20%;">
+                <h2>Adidas</h2>
+            </div>
+            <div>
+                <img src="./images/b3.png" alt="" style="width: 20%;">
+                <h2>Simple</h2>
+            </div>
+            <div>
+                <img src="./images/b4.png" alt="" style="width: 20%;">
+                <h2>Leaves</h2>
+            </div>
+            <div>
+                <img src="./images/b5.png" alt="" style="width: 20%;">
+                <h2>Puma</h2>
+            </div>
+            <div>
+                <img src="./images/b6.png" alt="" style="width: 20%;">
+                <h2>Twitch</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service -->
+    <div class="service">
+        <div class="service-container-1">
+            <div>
+                <h2>We Provide Best</h2>
+                <h2>Customer Experience</h2>
+            </div>
+
+            <div>
+                <p>|| we ensure that our customer have the best shopping experience</p>
+            </div>
+        </div>
+                
+        <div class="service-container-2">
+            <div>
+                <i class="fa-regular fa-circle-check"></i>
+                <h4>Original Products</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quo voluptatum  </p>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quo voluptatum.</p>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-solid fa-broom"></i>
+                <h4>New Arrival Everyday</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quo voluptatum.</p>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-solid fa-truck-fast"></i>
+                <h4>Fast & Free Shipping</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quo voluptatum.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Arrivals -->
+
+    <div>
+        <h2 style="padding: 20px;">New Arrival</h2>
+
+    <div class="new-arrival" id="new-arrivals">
+        <div class="new-arrival-container">
+            <img src="./images/f1.jpg" style="width: 100%; filter:brightness(60%)" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./images/n7.jpg" style="width: 100%; filter:brightness(60%)" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./images/n1.jpg" style="width: 100%; filter:brightness(60%)" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./images/f7.jpg" style="width: 100%; filter:brightness(60%)" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Most Wanted -->
+
+    <div>
+        <h2 style="padding: 20px;">Most Wanted</h2>
+
+    <div class="most-wanted" id="mostWanted">
+
+        <div class="most-wanted-container">
+            <img src="./images/n8.jpg" style="width: 100%;" alt="">
+            <div class="heart">
+                <img src="./images/blackheart.png" alt="" onclick="showRed(this)" class="black-heart">
+                <img src="./images/redheart.png" alt="" onclick="showBlack(this)" class="red-heart">
+            </div>
+        </div>
+
+        <div class="most-wanted-container">
+            <img src="./images/n7.jpg" style="width: 100%;" alt="">
+            <div class="heart">
+                <img src="./images/blackheart.png" alt="" onclick="showRed(this)" class="black-heart">
+                <img src="./images/redheart.png" alt="" onclick="showBlack(this)" class="red-heart">
+            </div>
+        </div>
+
+        <div class="most-wanted-container">
+            <img src="./images/n1.jpg" style="width: 100%;" alt="">
+            <div class="heart">
+                <img src="./images/blackheart.png" onclick="showRed(this)" class="black-heart">
+                <img src="./images/redheart.png" alt="" onclick="showBlack(this)" class="red-heart">
+            </div>
+        </div>
+
+        <div class="most-wanted-container">
+            <img src="./images/f7.jpg" style="width: 100%;" alt="">
+            <div class="heart">
+                <img src="./images/blackheart.png" alt="" onclick="showRed(this)" class="black-heart">
+                <img src="./images/redheart.png" alt="" onclick="showBlack(this)" class="red-heart">
+            </div>
+        </div>
+
+        <!-- <div class="new-arrival-container">
+            <img src="./images/f1.jpg" style="width: 100%;" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./images/n7.jpg" style="width: 100%;" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./images/n1.jpg" style="width: 100%;" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./images/f7.jpg" style="width: 100%;" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div> -->
+    </div>
+
+    </div>
+
+    <!-- News -->
+
+    <div class="news">
+        <h2>Join our News Letter</h2>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+    <div class="news-input">
+        <input type="text" class="search">
+    </div>
+
+    <div>
+        <button>Subscribe</button>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-box-1">
+            <h2 class="headingText">Nostra</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram" style="color: #ffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffff;"></i>
+                <i class="fa-brands fa-facebook" style="color: #ffff;"></i>
+            </div>
+        </div>
+    </div>
+
+    <p>@ 2023 Nostra.com</p>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
